@@ -1,0 +1,19 @@
+ // Theta is angle between servo arm to rope
+ // Phi is angle between Radius of ring to rope
+ //Alpha is angle between upper string to wall of rocket
+ // Beta is angle between lower string to wall of rocket
+int Sa; // Servo Arm
+int R; // Radius of ring
+int th; // change in Theta (angle from 
+int thKn; // Theta knot
+int a; // change in Alpha 
+int aKn; // Alpha knot
+int b; // change in Beta
+int bKn; // Beta knot
+int ph; // change in Phi
+int phKn; // Phi knot
+int c = (sin(phKn)/sin(bKn);
+int d = ((sin(thKn + th)/sin(a))-(sin(thKn)/sin(aKn)))/R;
+
+// Transfer function for change in Phi
+ph = arcsin( sin(b)*( c - ((Sa * d))) ) - phKn;
